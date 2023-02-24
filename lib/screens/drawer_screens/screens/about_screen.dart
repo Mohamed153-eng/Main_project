@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:graduation/components/about/developer.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({Key? key}) : super(key: key);
@@ -8,59 +7,57 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(10.0),
-        /*
-        child: ListView(
+      appBar: AppBar(
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.arrow_back_ios, color: Colors.indigo),
+        ),
+        title: Text(
+          'About',
+          style: TextStyle(
+            color: Colors.indigo,
+            fontSize: 30,
+          ),
+        ),
+        backgroundColor: Colors.white,
+        elevation: 1,
+      ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
           children: [
-            Developer(
-              image: 'assets/images/developers/mostafa.jpg',
-              name: 'Mostafa Mohamed',
-              jopName: 'Mobile Developer',
+            SizedBox(height: 10),
+            Text(
+              'powered by',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            Developer(
-              image: 'assets/images/developers/mohamed.jpg',
-              name: 'Mohamed Ahmed',
-              jopName: 'Mobile Developer',
+            SizedBox(height: 10,),
+            Text(
+              'Team',
+              style: TextStyle(
+                fontSize: 30
+              ),
             ),
-            Developer(
-              image: 'assets/images/developers/elshimy.jpg',
-              name: 'Mohamed Elshimy',
-              jopName: 'Mobile Developer',
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/codeblox.png'),
+
+                width: 500,
+                height: 500,
+
+
+              ),
             ),
-            Developer(
-              image: 'assets/images/developers/mohand.jpg',
-              name: 'Mohand Mohamed',
-              jopName: 'Back-End Developer',
-            ),
-            Developer(
-              image: 'assets/images/developers/sabry.jpg',
-              name: 'Mohamed Sabry',
-              jopName: 'Back-End Developer',
-            ),
-            Developer(
-              image: 'assets/images/developers/kabany.jpeg',
-              name: 'Ahmed Kabany',
-              jopName: 'Back-End Developer',
-            ),
-            Developer(
-              image: 'assets/images/developers/fandoly.jpeg',
-              name: 'Mohamed Fandoly',
-              jopName: 'Back-End Developer',
-            ),
-            Developer(
-              image: 'assets/images/developers/abdelrahman.jpg',
-              name: 'Abd Elrahman Abd Allah',
-              jopName: 'Website Developer',
-            ),
-            Developer(
-              image: 'assets/images/developers/belal.jpg',
-              name: 'Belal Mohamed',
-              jopName: 'Website Developer',
-            ),
+
+
+
           ],
         ),
-        */
       ),
     );
   }

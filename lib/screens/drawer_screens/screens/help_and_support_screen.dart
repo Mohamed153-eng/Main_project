@@ -76,8 +76,9 @@ class HelpAndSupportScreen extends StatelessWidget {
                             ),
                             Image(
                               image: AssetImage('assets/images/agent2.png'),
-                              width: 100,
                               height: 100,
+                              width: 100,
+
 
                             ),
                             Row(
