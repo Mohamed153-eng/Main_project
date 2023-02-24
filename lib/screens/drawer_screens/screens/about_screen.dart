@@ -33,66 +33,59 @@ class AboutScreen extends StatelessWidget {
               'powered by',
               style: TextStyle(
                 fontSize: 30,
-                fontWeight: FontWeight.bold,
+                  fontFamily: 'pacifico',
               ),
             ),
             SizedBox(
               height: 10,
             ),
-            Text(
-              'Team',
-              style: TextStyle(fontSize: 30),
-            ),
-            Image(
-              image: AssetImage('assets/images/codeblox.png'),
-              width: 500,
-              height: 200,
-            ),
+
+
             Image(
               image: AssetImage('assets/images/ph00.png'),
               width: 500,
               height: 500,
             ),
-            Text('Mohammed Ahmed Mohammed (Front End)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Mohammed Adel Moustafa (Front End)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Moustafa Mohammed Ahmed (Front End)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Mohammed Mohammed Sapry (Back End)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Salma ELsayed Mousa (Back End)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Mohammed Adel Fandouly (Back End)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Ahmed AbdelHalim Ahmed (Back End)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Mohand Ragab Mohammed (Database'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('belal Mohammed hussein (Web site)'),
-            SizedBox(
-              height: 10,
-            ),
-            Text('Abdelrhman Ashraf Mohammed (Web site)'),
-            SizedBox(
-              height: 20,
-            ),
+            // Text('Mohammed Ahmed Mohammed (Front End)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Mohammed Adel Moustafa (Front End)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Moustafa Mohammed Ahmed (Front End)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Mohammed Mohammed Sapry (Back End)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Salma ELsayed Mousa (Back End)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Mohammed Adel Fandouly (Back End)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Ahmed AbdelHalim Ahmed (Back End)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Mohand Ragab Mohammed (Database'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('belal Mohammed hussein (Web site)'),
+            // SizedBox(
+            //   height: 10,
+            // ),
+            // Text('Abdelrhman Ashraf Mohammed (Web site)'),
+            // SizedBox(
+            //   height: 20,
+            // ),
             SelectableText('Contact Email: pharmacy@Example.com',
               style: TextStyle(
                 fontWeight: FontWeight.bold
